@@ -16,18 +16,17 @@ There are two type of oracles that I implemented.
 ```True (there is at least one negative integer in the list [1, 2, 3, 6, 2, 1, 128])```.
 This is clearly wrong so the binary representation should be set to a higher value where 128 can be correctly represented.
 2. The other oracle receives an input where the list of integers transformed into a binary list depending on their signs (1: negative and 0: positive). The oracle then works just like in the above case: applies a CZ gate if it finds a 1 in the list and remains trivial otherwise. This makes the algorithm independent of the binary representation bit size.
-The drawing the circuit:
-
-<img align="center" src="qc.png" alt="Quantum Circuit" title="Quantum Circuit" width="600"/>
-
-
-
-
+The drawing of the circuit:
+<p align="center">
+<img src="qc.png" alt="Quantum Circuit" title="Quantum Circuit" width="600"/>
+  
 Running a circuit on a simulator gives us the following results: 
 * if there is a negative number in the list then the measurment gives the most counts to the state $\ket{11}$ (in our case we set the number of shots to 1000 and all of them came out as $\ket{11}$.)
-  
+<p align="center">
+<img src="neg.png" alt="negative" title="Negative detected" width="600"/>
 * if there is no negative number in the list then all possible states got circa the same amout of measurement counts
-
+<p align="center">
+<img src="pos.png" alt="positive" title="Positive detected" width="600"/>
 
 This will change if we run the algorithm on a real quantum computer: the exactness of $\ket{11}$ state disappeares
 
