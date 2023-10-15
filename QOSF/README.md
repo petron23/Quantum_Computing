@@ -23,7 +23,6 @@ This is clearly wrong so the binary representation should be set to a higher val
 The drawing the circuit:
 <p align="center">
 <img src="qc.png" alt="Quantum Circuit" title="Quantum Circuit" width="600"/>
-<\p>
 
 
 
