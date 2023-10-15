@@ -37,4 +37,4 @@ This will change if we run the algorithm on a real quantum computer: the complet
 <img src="neg_q.png" alt="negative_quantum" title="Negative detected (quantum case)" width="400"/>
 
 ### Remark
-This is not an ideal problem for  the Gorver algorithm since already the encoding of the integers is of order $O(N)$ so the adventage of the Grover algorithm's $ O(/sqrt{N})$ cannot be exploited.
+This is not an ideal problem for  the Gorver algorithm since already the encoding of the integers is of order $O(N)$ so the adventage of the Grover algorithm's $ O(\sqrt{N})$ cannot be exploited.
