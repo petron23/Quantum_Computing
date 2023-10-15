@@ -21,7 +21,7 @@ There are two type of oracles that I implemented.
 This is clearly wrong so the binary representation should be set to a higher value where 128 can be correctly represented.
 2. The other oracle receives an input where the list of integers transformed into a binary list depending on their signs (1: negative and 0: positive). The oracle then works just like in the above case: applies a CZ gate if it finds a 1 in the list and remains trivial otherwise. This makes the algorithm independent of the binary representation bit size.
 The drawing the circuit:
-![axde][qcim]
+<img src="qc.png" alt="Quantum Circuit" width="200"/>
 
 
 
@@ -36,4 +36,3 @@ This will change if we run the algorithm on a real quantum computer: the exactne
 
 
    
-[qcim]: qc.png "Quantum circuit"
