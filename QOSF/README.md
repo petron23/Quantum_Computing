@@ -21,19 +21,20 @@ The drawing of the circuit:
 <img src="qc.png" alt="Quantum Circuit" title="Quantum Circuit" width="600"/>
   
 Running a circuit on a simulator gives us the following results: 
-* if there is a negative number in the list then the measurment gives the most counts to the state $\ket{11}$ (in our case we set the number of shots to 1000 and all of them came out as $\ket{11}$.)
+* if there is a negative number in the list then the measurment gives the most counts to the state $\ket{11}$ (in our case we set the number of shots to 1000 and all of them came out as $\ket{11}$):
   
 <p align="center">
 <img src="neg.png" alt="negative" title="Negative detected" width="400"/>
   
-* if there is no negative number in the list then all possible states got circa the same amout of measurement counts
+* if there is no negative number in the list then all possible states got circa the same amout of measurement counts:
   
 <p align="center">
-<img src="pos.png" alt="positive" title="Positive detected" width="400"/>
+<img src="pos.png" alt="positive" title="Only positive detected" width="400"/>
 
-This will change if we run the algorithm on a real quantum computer: the complete accumulation of the counts on $\ket{11}$ disappeares due to noise. However still a sharp peak is present for $\ket{11}$ indicating the negative number.
+This will change if we run the algorithm on a real quantum computer: the complete accumulation of the counts on $\ket{11}$ disappeares due to noise. However still a sharp peak is present for $\ket{11}$ indicating the negative number:
 
-
+<p align="center">
+<img src="neg_q.png" alt="negative_quantum" title="Negative detected (quantum case)" width="400"/>
 
 ### Remark
-This is not an ideal problem for  the Gorver algorithm since already the encoding of the integers is of order $O(N)$ so the adventage of the Grover algorithm's $ O(sqrt{N})$ cannot be exploited.
+This is not an ideal problem for  the Gorver algorithm since already the encoding of the integers is of order $O(N)$ so the adventage of the Grover algorithm's $ O(/sqrt{N})$ cannot be exploited.
