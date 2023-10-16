@@ -1,4 +1,4 @@
-## Finding negative number
+# Finding negative number
 The task was to create a quantum circuit that finds the negative number in a list of integers. 
 Example 
 ```
